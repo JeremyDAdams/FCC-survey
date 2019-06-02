@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <div id='header'>
+      <h1 id='title'>BBQ Survey</h1>
+      <p id='description'>Let us know about your favorite KC BBQ restaurant!</p>
+    </div>
+    <div id='main'>
+        <form id='survey-form' class='form'>
+            <label id='name-label' for='name'>Name: </label>
+            <input id='name' type='text' placeholder='Enter your name' required></input>
+            
+
+            <label id='email-label' for='email'>Email: </label>
+            <input id='email' type='email' placeholder='Enter your Email' required></input>
+
+
+            <label id='number-label' for='number'>Age: </label>
+            <input id='number' type='number' placeholder='Age' min=1 max=122 required></input>
+
+
+            <span class='favorite'>Pick your favorite BBQ restaurant:</span>
+            <select id='dropdown' name='Restaurants'>
+                <option value="Slap's">Slap's</option>
+                <option value="Arthur Bryant's">Arthur Bryant's</option>
+                <option value="Plowboy's">Plowboy's</option>
+                <option value="Gate's">Gate's</option>
+                <option value="Bates City">Bates City</option>
+            </select>
+
+
+    
+            <span class='frequency'>How often do you eat BBQ?</span>
+            
+            <div class="frequencyinput">
+                <label class='&--1' id='very-often-label' for='Very often'>Very often</label>
+                <input class='&--2' type='radio' value='Very often' name='frequency'></input>
+    
+                <label class='&--3' id='regularly-label' for='Regularly'>Regularly</label>
+                <input class='&--4' type='radio' value='Regularly' name='frequency'></input>
+    
+                <label class='&--5' id='rarely-label' for='rarely'>Rarely</label>
+                <input class='&--6' type='radio' id='rarely' value='Rarely' name='frequency'></input>
+            </div>
+               
+        
+        
+            <span class='meats'>What are your favorite BBQ meats?</span>
+            <div class="meats__input">
+                <li><input type='checkbox' value='Brisket'>Brisket</input></li>
+                <li><input type='checkbox' value='Ribs'>Ribs</input></li>
+                <li><input type='checkbox' value='Pulled pork'>Pulled pork</input></li>
+                <li><input type='checkbox' value='Burnt ends'>Burnt Ends</input></li>
+                <li><input type='checkbox' value='Sausage'>Sausage</input></li>
+            </div>
+            <span class='suggestions'>Are there any options you would like to see added to the survey?</span>
+            <div class="suggestions__input">
+                <textarea placeholder='Please enter suggestions here'></textarea>
+            </div>
+            <input id='submit' type='submit' value='Submit'></input>
+        </form>
+    </div>
+  </div>
+  </body>
+</html>
